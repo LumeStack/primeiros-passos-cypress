@@ -1,5 +1,5 @@
 describe('Orange HRM Tests', () => {
-  
+
   const selectorsList = {
     usernameField: "[name='username']",
     passwordField: "[name='password']",
@@ -21,6 +21,7 @@ describe('Orange HRM Tests', () => {
     cy.get(selectorsList.usernameField).type('Test')
     cy.get(selectorsList.passwordField).type('Test')
     cy.get(selectorsList.loginButton).click()
+    cy.get(selectorsList.wrongCredentialAlert)
     cy.get(selectorsList.wrongCredentialAlert)
   })
 })

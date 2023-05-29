@@ -26,6 +26,5 @@ describe('Orange HRM Tests', () => {
     cy.get(selectorsList.passwordField).type(userData.userFail.password)
     cy.get(selectorsList.loginButton).click()
     cy.get(selectorsList.wrongCredentialAlert)
-    cy.get(selectorsList.wrongCredentialAlert)
   })
 })

@@ -16,8 +16,6 @@ class MenuPage {
     accessorPerformance() {
         cy.get(this.selectorsList().performanceButton).click()
     }
-
-
 }
 
 export default MenuPage
